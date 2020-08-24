@@ -134,9 +134,6 @@
             var indentLevel = (width / indentUnitWidthEm * 2) - 1;
             text = markdownIndent(indentLevel) + '- ' + text;
         }
-        if (liDot === null && text.length > 0 && text[0] !== '#') {
-            text += '<br>'
-        }
 
         pageTexts.push(text);
     }
